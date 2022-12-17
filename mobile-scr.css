@@ -1,0 +1,71 @@
+.wide-scr {
+  display: none;
+}
+.mob-scr {
+  display: block;
+}
+.menu-lbl {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+.fa-bars {
+  font-size: 30px;
+  transform: scale(1.4);
+}
+.show-on-click {
+  display: none;
+  /* border-bottom: 2px solid black; */
+}
+input {
+  display: none;
+}
+.sub-links-mob {
+  display: none;
+}
+.sub-links-mob li { 
+  font-size: 17px;
+  padding: 10px 0 5px 20px;
+}
+label {
+  /*label is inline element, make it as block*/
+  display: block;
+  /* border: 1px solid red; */
+  font-size: 22px;
+  padding: 10px;
+}
+/* \\\\\ */
+/* \\\\\ */
+/* \\\\\ */
+.main-menu-mob {
+  /* border: 1px solid green; */
+  border-top: 2px solid black;
+  padding: 5px;
+}
+.main-menu-mob li a {
+  display: block;
+}
+.fa-solid {
+  position: absolute;
+  right: 65px;
+}
+.sub-css-mob {
+  display: none;
+}
+label:hover,
+label:hover .fa-solid,
+.sub-links-mob li a:hover {
+  color: cyan;
+  letter-spacing: 4px;
+}
+#menu:checked + .show-on-click,
+#html:checked + .sub-links-mob,
+#css:checked + .sub-links-mob,
+#js:checked + .sub-links-mob,
+#css-menu:checked + .sub-css-mob {
+  display: block;
+}
+.css-menu-sub-mob {
+  padding: 0;
+  font-size: 17px;
+}

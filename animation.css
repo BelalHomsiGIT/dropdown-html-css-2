@@ -1,0 +1,80 @@
+@keyframes header-down{
+    0%{
+        transform: translateY(-80px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+header{
+    animation: header-down 1s 1;
+}
+/* \\\\\\ */
+@keyframes header-h1-moving{
+    0%{
+        transform: translateX(-200px);
+    }
+    25%{
+        transform: translateX(150px);
+    }
+    50%{
+        transform: translateX(-120px);
+    }
+    70%{
+        transform: translateX(60px);
+    }
+    80%{
+        transform: translateX(-50px);
+    }
+    90%{
+        transform: translateX(25px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+header h1{
+    animation: header-h1-moving 3s 1;
+}
+/* \\\\\\ */
+@keyframes menu-opacity{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.main-menu, .sub-links, .sub-css{
+    animation: menu-opacity 1s 1;
+}
+/* \\\\\\\ */
+/* \\\\\\\ */
+
+@keyframes menu-mob{
+    0%{
+        transform: translateX(100px);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.main-menu-mob, .sub-links-mob, .sub-css-mob{
+    animation: menu-mob 1s 1;
+}
+
+/* \\\\\\\ */
+@keyframes heart{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.heart{
+    animation: heart 2s infinite;
+}

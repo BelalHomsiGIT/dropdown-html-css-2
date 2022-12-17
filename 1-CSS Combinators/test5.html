@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <style>
+        .test{
+            margin: 10px;
+            border: 1px solid green;
+            padding: 10px;
+        }
+        /* Element with class test and bold at the same time*/
+        .test.bold{
+            font-weight: bold;
+            color: red;
+        }
+        /* Element with class myp1 which in parent element with class test*/
+        .test .myp1{
+            background-color: cyan;
+        }
+        .test.bold .myp2{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div class="test">
+        Div1
+        <p>Hello 1-1</p>
+        <p class="myp1">Hello 1-2</p>
+        <p class="myp1 myp2">Hello 1-3</p>
+    </div>
+    <div class="test bold">
+        Div2
+        <p>Hello 2-1</p>
+        <p class="myp1">Hello 2-2</p>
+        <p class="myp1 myp2">Hello 2-3</p>
+    </div>
+</body>
+</html>

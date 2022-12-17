@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="mobile-scr.css" media="(max-width : 800px)">
+
+</head>
+<body>
+    <header class="wide-scr">
+        <h1>Belal Courses</h1>
+        <ul class="links">
+            <li class="main-menu">
+                <a class="main-link" href="">HTML</a>
+                <ul class="sub-links">
+                    <li><a href="">Full HTML</a></li>
+                    <li><a href="">Crash Course</a></li>
+                    <li><a href="">One Lecture</a></li>
+                </ul>
+            </li>
+            <li class="main-menu">
+                <a class="main-link" href="">CSS</a>
+                <ul class="sub-links">
+                    <li><a href="">Full CSS</a></li>
+                    <li><a href="">Crash Course</a></li>
+                    <li class="css-menu">
+                        <a href="">Projects &#8883;</a>
+                        <ul class="sub-css">
+                            <li><a href="">Project1</a></li>
+                            <li><a href="">Project1</a></li>
+                            <li><a href="">Project1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="main-menu">
+                <a class="main-link" href="">Javascript</a>
+                <ul class="sub-links">
+                    <li><a href="">Full JS</a></li>
+                    <li><a href="">Crash Course</a></li>
+                    <li><a href="">ES6</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <header class="mob-scr">
+        <h1>Belal Courses</h1>
+        <label for="menu" class="menu-lbl"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" name="" id="menu">
+        <div class="show-on-click">
+
+            <div class="main-menu-mob">
+                <label for="html">HTML<i class="fa-solid fa-plus"></i></label>
+                <input type="checkbox" name="" id="html">
+                <ul class="sub-links-mob">
+                    <li><a href="">Full HTML</a></li>
+                    <li><a href="">Crash Course</a></li>
+                    <li><a href="">One Lecture</a></li>
+                </ul>
+            </div>
+
+            <div class="main-menu-mob">
+                <label for="css">CSS<i class="fa-solid fa-plus"></i></label>
+                <input type="checkbox" name="" id="css">
+                <ul class="sub-links-mob">
+                    <li><a href="">Full CSS</a></li>
+                    <li><a href="">Crash Course</a></li>
+                    <li class="css-menu-mob">
+                        <!-- <a href="">Projects &#8883;</a> -->
+                        <label for="css-menu" class="css-menu-sub-mob">Projects<i class="fa-solid fa-plus"></i></label>
+                        <input type="checkbox" name="" id="css-menu">
+                        <ul class="sub-css-mob">
+                            <li><a href="">Project1</a></li>
+                            <li><a href="">Project1</a></li>
+                            <li><a href="">Project1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main-menu-mob">
+                <label for="js">Javascript<i class="fa-solid fa-plus"></i></label>
+                <input type="checkbox" name="" id="js">
+                <ul class="sub-links-mob">
+                    <li><a href="">Full JS</a></li>
+                    <li><a href="">Crash Course</a></li>
+                    <li><a href="">ES6</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        Responsive Dropdown <br>
+        Menu Bar <br>
+        HTML & CSS Only
+    </main>
+    <footer>
+        developed by Belal Courses - belalGITHub <span class="heart">&#128148;</span>
+    </footer>
+</body>
+</html>

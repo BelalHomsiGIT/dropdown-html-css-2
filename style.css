@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #f1f1f1;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: 3px;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  min-height: 80px;
+  background-color: #1b1b1b;
+}
+.wide-scr {
+  display: flex;
+  justify-content: space-around;
+}
+header h1 {
+  padding: 20px;
+}
+.links {
+  display: flex;
+  padding: 12px;
+}
+.main-menu {
+  padding: 20px;
+  position: relative;
+}
+.main-link {
+  padding: 8px 15px;
+}
+.main-link:hover {
+  color: cyan;
+  box-shadow: 0 0 4px cyan;
+  border-radius: 5px;
+}
+.sub-links {
+  display: none;
+  position: absolute;
+  background-color: #1b1b1b;
+  /* letter-spacing: -10px; */
+  padding: 5px;
+  border-top: 1px solid cyan;
+  border-radius: 5px;
+
+  top: 68px;
+  left: 25px;
+  width: 170px;
+}
+.sub-links li {
+  padding: 8px 0;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(41, 58, 47);
+}
+.sub-links li a:hover {
+  color: cyan;
+  font-weight: bold;
+  font-style: italic;
+}
+.main-menu:hover .sub-links {
+  display: block;
+}
+
+.css-menu {
+  position: relative;
+}
+.css-menu:hover .sub-css {
+  display: block;
+}
+.sub-css {
+  display: none;
+  position: absolute;
+  background-color: #1b1b1b;
+  /* letter-spacing: -10px; */
+  padding: 5px;
+  border-top: 1px solid cyan;
+  border-radius: 5px;
+
+  top: 5px;
+  left: 166px;
+  width: 150px;
+}
+
+.mob-scr {
+  display: none;
+}
+ /* \\\\\\\\ */
+ main{
+  color:black;
+  text-align: center;
+  height: calc(100vh - 143px);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ footer{
+  background-color: #1b1b1b;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+ }
